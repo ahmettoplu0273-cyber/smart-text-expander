@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: white;
+      color: #333;
+      margin: 0;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #667eea;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .shortcuts {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #e9ecef;
+    }
+    
+    .shortcut-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 13px;
+      align-items: center;
+    }
+    
+    .shortcut-key {
+      background: #667eea;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+    
+    .premium-section {
+      background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ffeaa7;
+    }
+    
+    .premium-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #856404;
+    }
+    
+    .premium-features {
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: 12px;
+      color: #856404;
+    }
+    
+    .premium-features div {
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .premium-features span:first-child {
+      margin-right: 6px;
+    }
+    
+    button {
+      background: #00d4aa;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    
+    button:hover {
+      background: #00b894;
+      transform: translateY(-1px);
+    }
+    
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🚀</div>
+    <div class="title">Smart Text Expander</div>
+    <div class="subtitle">Type less, do more</div>
+    
+    <div class="shortcuts">
+      <div class="shortcut-item">
+        <span>Email</span>
+        <span class="shortcut-key">;;mail</span>
+      </div>
+      <div class="shortcut-item">
+        <span>Phone</span>
+        <span class="shortcut-key">;;tel</span>
+      </div>
+      <div class="shortcut-item">
+        <span>Signature</span>
+        <span class="shortcut-key">;;signature</span>
+      </div>
+      <div class="shortcut-item">
+        <span>Date</span>
+        <span class="shortcut-key">;;date</span>
+      </div>
+    </div>
+    
+    <div class="premium-section">
+      <div class="premium-title">💎 PREMIUM FEATURES</div>
+      <div class="premium-features">
+        <div><span>✓</span> Invoices & Contracts</div>
+        <div><span>✓</span> Professional CV Templates</div>
+        <div><span>✓</span> Business Proposals</div>
+        <div><span>✓</span> 50+ Premium Shortcuts</div>
+      </div>
+      <button id="premiumBtn">GET PREMIUM - $3/month</button>
+    </div>
+    
+    <div class="footer">
+      Works everywhere • No setup required
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
